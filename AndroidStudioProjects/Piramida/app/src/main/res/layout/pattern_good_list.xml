@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px">
+    </ImageView>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:id="@+id/textViewText"
+        android:layout_weight="43.30"
+        android:layout_alignTop="@+id/icon"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="10000"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/textViewPrice"
+        android:layout_weight="43.30"
+        android:layout_marginTop="150dp"
+        android:layout_alignLeft="@+id/textViewText"
+        android:layout_alignStart="@+id/textViewText"
+        android:layout_marginRight="64dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="грн."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="63dp"
+        android:layout_marginStart="63dp"
+        android:id="@+id/textView3"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/textViewPrice"
+        android:layout_alignBottom="@+id/textViewPrice"
+        android:layout_alignLeft="@+id/textViewPrice"
+        android:layout_alignStart="@+id/textViewPrice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_alignLeft="@+id/textViewPrice"
+        android:layout_alignStart="@+id/textViewPrice"
+        android:layout_marginBottom="38dp"
+        android:textSize="20sp"
+        android:id="@+id/textViewNumberOfBGoods"
+        android:textAlignment="viewStart"
+        android:layout_gravity="start"/>
+
+    <TextView
+        android:text="шт."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/textView333"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/textViewNumberOfBGoods"
+        android:layout_alignBottom="@+id/textViewNumberOfBGoods"
+        android:layout_alignLeft="@+id/textViewNumberOfBGoods"
+        android:layout_alignStart="@+id/textViewNumberOfBGoods" />
+</RelativeLayout>

@@ -1,0 +1,34 @@
+ARTLINE Extreme Poseidon P99
+
+Краткие технические характеристики  Intel Core i7-6700K (4.0 - 4.5 ГГц) / RAM 64 ГБ DDR4 / HDD 4 ТБ + SSD 1 ТБ / 2 x nVidia GeForce GTX1080, 8 ГБ / без ОД / Wi-Fi / LAN / Windows 10 Pro
+Процессор  Четырехъядерный Intel Core i7-6700K (4.0 ГГц)
+Объем оперативной памяти  64 ГБ
+Тип видеокарты и обьем видеопамяти  Дискретная, 2 x nVidia GeForce GTX1080, по 8 ГБ выделенной видеопамяти каждая
+Чипсет материнской платы  Intel Z170
+Обьем HDD  HDD: 4 TБ
+SSD: 1 TБ
+Наличие FDD  Нет
+Порты  На передней панели:
+2 х USB 2.0
+2 x USB 3.0
+Выход для наушников
+Вход для микрофона
+
+На задней панели:
+1 x PS/2 
+1 x DisplayPort 
+1 x HDMI 
+1 x USB 3.1 Type-C 
+1 x USB 3.1 Type-A 
+6 x USB 3.0 
+1 x LAN (RJ45) 
+1 x S/PDIF 
+5 x Аудио
+2 x гнезда для антенн Wi-Fi
+
+На видеокартах:
+2 x DL-DVI-I
+2 x HDMI 2.0
+6 x Display Port
+Мощность БП  1000 Вт
+Беспроводные технологии  Wi-Fi 802.11AC

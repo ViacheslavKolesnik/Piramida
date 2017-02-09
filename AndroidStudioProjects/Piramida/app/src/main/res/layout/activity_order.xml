@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.slavian.study.piramida.Order">
+
+
+    <TextView
+        android:text="Служба доставки"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textView4"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="Нова пошта"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView6"
+        android:textSize="25sp" />
+
+    <TextView
+        android:text="УкрПошта"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/textView8"
+        android:textSize="25sp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:text="Способ оплаты"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textView9"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="Privat24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/textView10"
+        android:textSize="25sp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:text="Наложенный платёж"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_marginTop="44dp"
+        android:id="@+id/textView11"
+        android:textSize="25sp" />
+
+    <TextView
+        android:text="Стоимость доставки согласно тарифам службы доставки. Оплата доставки производится наличным расчётом при получении товара."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_marginTop="68dp"
+        android:id="@+id/textView12"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="10000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9"
+        android:id="@+id/textViewFormOrderPrice"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="грн."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/textViewFormOrderPrice"
+        android:layout_alignBottom="@+id/textViewFormOrderPrice"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Товаров в заказе:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:id="@+id/textView16"
+        android:textSize="30sp"
+        android:layout_above="@+id/textViewFormOrderPrice"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:id="@+id/radioGroupDelivery"
+        android:layout_above="@+id/textView9"
+        android:layout_alignRight="@+id/textViewFormOrderPrice"
+        android:layout_alignEnd="@+id/textViewFormOrderPrice">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:id="@+id/radioButtonNewPost"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:id="@+id/radioButtonUkrPost" />
+    </RadioGroup>
+
+    <TextView
+        android:text="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewOrderGoodsNumber"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/textView16"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_alignLeft="@+id/radioGroupDelivery"
+        android:layout_alignStart="@+id/radioGroupDelivery" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:id="@+id/radioGroupPayment"
+        android:layout_above="@+id/textView12"
+        android:layout_alignLeft="@+id/radioGroupDelivery"
+        android:layout_alignStart="@+id/radioGroupDelivery">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:id="@+id/radioButtonPrivat24"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:id="@+id/radioButtonCash" />
+
+    </RadioGroup>
+
+    <Button
+        android:text="Подтвердить заказ"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:id="@+id/buttonOrderMoney"
+        android:textSize="30sp"
+        android:onClick="saveOrder"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="163dp" />
+
+    <TextView
+        android:text="Сумма заказа:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textSize="30sp"
+        android:layout_marginBottom="104dp"
+        android:layout_above="@+id/buttonOrderMoney"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
+
+    <TextView
+        android:text="Адрес доставки:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_marginTop="50dp"
+        android:id="@+id/textView20"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Харьков, ул.Сумская 3"
+        android:ems="10"
+        android:id="@+id/editTextAddress"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/textView20"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+</RelativeLayout>
